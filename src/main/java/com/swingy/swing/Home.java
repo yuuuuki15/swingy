@@ -60,6 +60,8 @@ public class Home {
             }
 
             System.out.println("Choose a name for the hero: ");
+            // to read newline after number.
+            scanner.nextLine();
             while (true) {
                 name = scanner.nextLine();
 

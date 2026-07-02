@@ -6,13 +6,15 @@ Player
 
 Hero(Abstract)
 | #String name
-| #String class
+| #HeroType type
 | #integer level
 | #integer experience
 | #float attack
 | #float defense
 | #float hit_point
 | #ArrayList artifactArray
+
+HeroType(enum)
 
 Knight
 
@@ -23,10 +25,12 @@ Princess
 Archer
 
 Artifact(Abstract)
-| #String type
+| #ArtifactType type
 | #String name
 | +add_artifact
 | +remove_artifact
+
+ArtifactType(enum)
 
 Weapon: Artifact
 | #String name

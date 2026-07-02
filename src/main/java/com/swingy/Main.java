@@ -1,9 +1,13 @@
 package com.swingy;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import com.swingy.controller.HomeController;
 
 public class Main {
     public static void main(String[] args) {
+        Logger.getLogger("org.hibernate").setLevel(Level.WARNING);
         String mode = "console";
         if (args.length > 1) {
             System.out.println("Too many arguments.");
