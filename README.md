@@ -14,6 +14,13 @@ Hero(Abstract)
 | #float hit_point
 | #ArrayList artifactArray
 
+Knight
+
+Hunter
+
+Princess
+
+Archer
 
 Artifact(Abstract)
 | #String type

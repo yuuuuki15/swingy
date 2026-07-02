@@ -1,6 +1,6 @@
-package com.ykawakit;
+package com.swingy;
 
-import com.ykawakit.swing.Home;
+import com.swingy.controller.HomeController;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,10 +22,9 @@ public class Main {
         System.out.println("mode: " + mode);
 
         try {
-            Home.show(mode);
+            HomeController.index(mode);
         } catch(Exception e) {
             System.out.println("Something happened.");
-            return ;
         }
     }
 }

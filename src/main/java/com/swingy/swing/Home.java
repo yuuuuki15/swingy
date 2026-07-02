@@ -1,4 +1,4 @@
-package com.ykawakit.swing;
+package com.swingy.swing;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
