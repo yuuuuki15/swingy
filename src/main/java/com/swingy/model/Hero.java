@@ -2,13 +2,19 @@ package com.swingy.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import jakarta.validation.constraints.*;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 public abstract class Hero {
 
+    @NotNull
     @NotBlank(message = "Name is required")
     private String name;
-    private HeroType type;
+
+    @NotNull
+    private final HeroType type;
+
     private int level;
     private int experience;
     private float attack;
